@@ -1,0 +1,23 @@
+<head>
+  <title>simple-todo</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>A Simple To-Do List</h1>
+      <h2>From <a href="https://www.meteor.com/tutorials/blaze/creating-an-app">Meteor Tutorial</a></h2>
+    </header>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
